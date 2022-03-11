@@ -112,9 +112,6 @@
         height: 30px;
         z-index: 1;
     }
-    .bgArrow:before {
-        background: url(../img/arrow-section-white.png) no-repeat center center / contain;
-    }
 
     .text-highlights{
         background-color: white;
