@@ -1,6 +1,6 @@
     body{
         font-family: 'Sarabun', sans-serif;
-        font-size: 15px;
+        font-size: 16px;
         color: #464646;
         background: #f3f3f3;
         font-weight: 300;
@@ -50,7 +50,7 @@
         left: 50%;
         transform: translateX(-50%);
         bottom: 8px;
-        border-top-color: #a9a9a9;
+        /* border-top-color: #a9a9a9; */
     }
 
     .dropdown a:hover  {
@@ -72,7 +72,15 @@
         padding: 80px 0;
         background-color: white;
     }
-    
+    section .sectionHeading::after{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background: #ce0020;
+        left: 0;
+        bottom: 0;
+    }
     section .titleUnderline:before{
         content: "";
         position: absolute;
@@ -90,28 +98,19 @@
         position: relative;
         padding: 0   0 7px 0;
     }
-    section .sectionHeading:before
-    {
-        content: "";
-        position: absolute;
-        width: 120px;
-        height: 3px;
-        background: #ce0020;
-        left: 0;
-        bottom: 0;
-    }
-    section .sectionHeading.centered:before,
+  
+   section .sectionHeading.centered:before,
     .titleUnderline.centered:before {
         left: 50%;
         transform: translateX(-50%);
-    }
+    } 
     /*----------highlights----------------- */
     .highlights{
         padding: 70px 0;
    background-color: #f3f3f3;
     }
 
-    .bgArrow:before {
+    /* .bgArrow:before {
         content: "";
         position: absolute;
         display: block;
@@ -121,7 +120,7 @@
         width: 70px;
         height: 30px;
         z-index: 1;
-    }
+    } */
 
         .text-highlights{
             background-color: white;
@@ -158,7 +157,7 @@
     }
     /* ------------------------footer-------------- */
     .footer{
-padding: 40px 0;
+    padding: 40px 0;
     }
     .footer .logo-footer{
         padding: 0 80px 0 80px;
@@ -251,7 +250,7 @@ padding: 40px 0;
         margin: 8px 0;
     }
    footer .communications{
-padding-top: 50px;
+    padding-top: 50px;
     }
     .copyright{
         background-color: #d7d7d7;
